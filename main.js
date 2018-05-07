@@ -24,7 +24,7 @@ for (i = 0; i < 20; i++) {
 }
 
 // Kata number 4
-for (i = 1; i <= 100; i++) {
+for (i = 1; i <= 100; i+=5) {
     if (i % 5 == 0) {
         makediv(i)
     }
@@ -53,7 +53,7 @@ for (i = 20; i >= 1; i--) {
 }
 
 // Kata number 9
-for (i = 100; i >= 5; i--) {
+for (i = 100; i >= 5; i-=5) {
     if (i % 5 == 0)
         makediv(i)
 }
@@ -136,7 +136,7 @@ function makebox2() {
 makebox2()
 // Kata number 21
 function makebox3() {
-    for (i = 1; i <= sampleArray.length; i++) {
+    for (i = 0; i <= sampleArray.length; i++) {
         let dog = document.createElement("div")
         dog.style.width = sampleArray[i] + "px";
         dog.style.height = "20px";
@@ -148,7 +148,7 @@ function makebox3() {
 makebox3()
 // Kata number 22
 function makebox4() {
-    for (i = 1; i <= sampleArray.length; i++) {
+    for (i = 0; i <= sampleArray.length; i++) {
         let dog = document.createElement("div")
         dog.style.width = sampleArray[i] + "px";
         dog.style.height = "20px";
